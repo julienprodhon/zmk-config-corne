@@ -1,0 +1,16 @@
+if SHIELD_ERGOKEEB_CORNE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "ErgoKeeb Corne"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ERGOKEEB_CORNE_LEFT || SHIELD_ERGOKEEB_CORNE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

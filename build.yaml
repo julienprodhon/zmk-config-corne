@@ -73,6 +73,16 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
+  # ErgoKeeb Corne (own PCB, nice!nano bootloader)
+  - board: nice_nano@2//zmk
+    shield: ergokeeb_corne_left
+    artifact-name: ergokeeb_corne_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano@2//zmk
+    shield: ergokeeb_corne_right
+    artifact-name: ergokeeb_corne_right
+
   # Sweep + nice!nano v2
   - board: nice_nano@2//zmk
     shield: cradio_left
