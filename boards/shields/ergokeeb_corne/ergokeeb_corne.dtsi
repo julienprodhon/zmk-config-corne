@@ -102,3 +102,12 @@
             ;
     };
 };
+
+// The nice!view rail is switched by P1.13 (the vendor firmware's "backlight" pin), not EXT_POWER.
+&gpio1 {
+    display_power {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-high;
+    };
+};
